@@ -1,0 +1,44 @@
+.todo_items {
+	display: flex;
+	flex-direction: column;
+}
+
+.todo_item {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.todo_item:nth-child(1n) {
+	background-color: #505b5e;
+}
+
+.todo_item:nth-child(2n) {
+	background-color: #273d44;
+}
+
+.todo_item:has(.myclass:checked) {
+	background-color: rgb(11, 21, 30);
+}
+
+.myclass:checked+.name {
+	text-decoration: line-through;
+}
+
+.icon {
+	display: flex;
+	width: 20px;
+	align-items: center;
+	justify-content: center;
+	transform: rotate(45deg);
+	color: rgb(35, 13, 13);
+	font-size: 20px;
+	font-weight: bolder;
+	text-shadow: 0px 0px 1px;
+}
+.text-block{
+	margin-left: 40px;
+}
+.text-color{
+	color: aquamarine;
+}
