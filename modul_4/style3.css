@@ -1,0 +1,77 @@
+body,
+html {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.image {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}
+.reallimage {
+	background: url(icon/fot.jpg);
+	background-size: 100% 100%;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+}
+.items {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 250px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.items:hover .blackmagic {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation-name: blackhover;
+	animation-duration: 0.3s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	background: #00000080;
+}
+.items:hover .reallimage {
+	overflow: hidden;
+	animation-name: imageScale;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+.item {
+	display: flex;
+	width: 50%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.other { position: relative; z-index: 4; }
+@keyframes blackhover {
+	0% { opacity: 0; }
+	30% { opacity: 0.3; }
+	70% { opacity: 0.7; }
+	100% { opacity: 1; }
+}
+@keyframes imageScale {
+	0% { transform: scale(1.0); }
+	100% { transform: scale(1.1);	}
+}

@@ -1,0 +1,68 @@
+.clock {
+	width: 400px;
+	height: 400px;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: relative;
+}
+.minute {
+	width: 100px;
+	height: 30px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background: green;
+	top: 185px;
+	animation-duration: 3600s;
+}
+.second {
+	width: 180px;
+	height: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background: red;
+	z-index: 2;
+	top: 190px;
+	animation-duration: 60s;
+}
+.second, .minute {
+	position: absolute;
+	left: 50%;
+	animation-name: myclock;
+	animation-iteration-count: infinite;
+	transform-origin: left center;
+	animation-timing-function: linear;
+}
+span {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 60px;
+}
+span:nth-child(3) { left: 170px; }
+span:nth-child(4) { right: 0; top: 170px; }
+span:nth-child(5) { bottom: 0; left: 170px; }
+span:nth-child(6) { left: 0; top: 170px; }
+@keyframes myclock {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+@-o-keyframes myclock {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+@-ms-keyframes myclock {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes myclock {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+@-moz-keyframes myclock {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+
