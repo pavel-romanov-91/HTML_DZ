@@ -1,0 +1,186 @@
+body,
+html {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	font-size: 22px;
+	;
+}
+
+
+nav.navbar.navbar-expand-lg.navbar-light.justify-content-between {
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color: #1e5886;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.justify-content-between img {
+	width: 55px;
+	height: 55px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.justify-content-between a.navbar-brand img {
+	width: 40px;
+	height: 40px;
+	filter: invert(1);
+
+}
+
+a.nav-link {
+	color: white;
+}
+
+h1  {
+	font-size: 1.5rem;
+}
+
+h3.news.text-black {
+	display: flex;
+	display: inline;
+	float: left;
+	padding-left: 390px;
+	padding-right: 947px;
+}
+
+.icon {
+	border: 2px solid black;
+	width: 31%;
+	float: left;
+	margin: 45px 90px 1px;
+	margin-top: 1px;
+}
+
+
+.text {
+	margin: 1px 5px 0px 215px;
+	vertical-align: text-top;
+	padding-left: 7px;
+	margin-top: -197px
+}
+
+.programming {
+	border: 2px solid black;
+	padding: 41px;
+	width: 31%;
+	margin: 45px 90px 1px;
+}
+
+.icon2 {
+	border: 2px solid black;
+	height: 206px;
+	width: 31%;
+	float: left;
+	margin: 45px 90px 1px;
+	margin-top: -2px;
+}
+
+button.btn.btn-primary.btn-lg {
+	padding: 4px 20px 4px 24px;
+	width: 706px;
+	margin-left: 90px;
+	margin-top: 5px;
+	margin-bottom: -2178px;
+	height: 68px;
+	background-color: #797979;
+	border-radius: 17px;
+}
+
+button.btn.btn-secondary.btn-lg {
+	padding: 4px 20px 4px 24px;
+	width: 806px;
+	margin-left: 332px;
+	margin-top: 5px;
+	margin-bottom: -2178px;
+	height: 68px;
+	background-color: #d0d0d0;
+	border-radius: 17px;
+}
+
+.container.text-center {
+	margin: -496px;
+	margin-left: 875px;
+}
+
+.col.text4 {
+	margin-left: -19%;
+	margin-right: -23%;
+	font-family: cursive;
+	font-size: 31px;
+}
+
+.row.\31 {
+	padding: 12px;
+}
+
+.row.\32 {
+	padding: 12px;
+}
+
+.row.\33 {
+	padding: 12px;
+}
+
+.row.\34 {
+	padding: 12px;
+}
+
+.row.\35 {
+	padding: 12px;
+}
+
+.row.\36 {
+	padding: 12px;
+}
+
+.row.\37 {
+	padding: 12px;
+}
+
+.row.\38 {
+	padding: 12px;
+}
+
+.row.\39 {
+	padding: 12px;
+}
+
+.text3 {
+	width: 10px;
+	margin: 0 auto;
+	padding: 5px 1px;
+	position: relative;
+	background: #eee;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.text3::before {
+	content: "";
+	border: solid transparent;
+	position: absolute;
+	left: 100%;
+	top: 0px;
+	border-left-color: #eee;
+	border-width: 23px;
+	margin-top: 3px;
+}
+
+.text5 {
+	width: 300px;
+	padding: 3px 9px;
+	position: relative;
+	background: #eee;
+	border-radius: 3px;
+}
+
+.text5::before {
+	content: "";
+	border: solid transparent;
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	border-right-color: #eee;
+	border-width: 24px;
+	margin-top: -25px;
+}
